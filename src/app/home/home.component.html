@@ -1,0 +1,16 @@
+<button (click)="allChange()">
+    <!-- <ng-container *ngIf="isComplete">Yes</ng-container>
+    <ng-container *ngIf="isComplete">NO</ng-container> -->
+    All
+</button>
+
+<div *ngFor="let todo of todos ">
+    <app-list-item [todo]="todo"></app-list-item>
+  
+<button (click)="changeComplete(todo)">{{todo.isComplete? "OK" : "NO" }}</button>
+    
+
+</div>
+
+
+
